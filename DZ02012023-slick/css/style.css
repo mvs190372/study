@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    --w1: 340px; 
+    --h1: 150px;
+    --w2: 943.61px; 
+    --h2: 387px;
+}
+
+.photo1 {
+    width: 89.07px;
+    height: 88.41px;
+    position: relative;
+    left: 35px;
+}
+
+.photo2 {
+    width: 943.61px;
+    height: 387px;
+}
+
+.outdiv__slider1 {
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+}
+
+.outdiv__slider2 {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+}
+
+.outdiv1 {
+    width: 100%;
+    height: 10px;
+    background-color: yellow;
+}
+
+.slider1 {
+    width: var(--w1);
+    height: var(--h1);
+    background-color: yellowgreen;
+}
+
+.slider2 {
+    width: var(--w2);
+    height: var(--h2);
+    background-color: white;
+}
+
+.outdiv2 {
+    width: calc((100% - var(--w1)) / 2);
+    height: var(--h1);
+    background-color: blue;
+}
+
+.outdiv3 {
+    width: calc((100% - var(--w1)) / 2);
+    height: var(--h1);
+    background-color: blueviolet;
+}
+
+.outdiv4 {
+    width: 100%;
+    height: 10px;
+    background-color: orange;
+}
+
+.outdiv5 {
+    width: calc((100% - var(--w2)) / 2);
+    height: var(--h2);
+    background-color: blue;
+}
+
+.outdiv6 {
+    width: calc((100% - var(--w2)) / 2);
+    height: var(--h2);
+    background-color: blueviolet;
+}
+
+.outdiv7 {
+    width: 100%;
+    height: 400px;
+    background-color: aquamarine;
+}
