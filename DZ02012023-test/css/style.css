@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    --w: 400px; 
+    --h: 150px;
+}
+
+.photo {
+    width: 89.07px;
+    height: 88.41px;
+}
+
+.outdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.outdiv1 {
+    width: 100%;
+    height: 100px;
+    background-color: yellowgreen;
+}
+
+.outdiv2 {
+    width: calc((100% - var(--w)) / 2);
+    height: var(--h);
+    background-color: pink;
+}
+
+.outdiv3 {
+    width: var(--w);
+    height: var(--h);
+    background-color: white;
+}
+
+.outdiv4 {
+    width: calc((100% - var(--w)) / 2);
+    height: var(--h);
+    background-color: blueviolet;
+}
+
+.outdiv5 {
+    width: 100%;
+    height: 800px;
+    background-color: aquamarine;
+}

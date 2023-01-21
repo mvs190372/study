@@ -1,0 +1,325 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	flex: auto;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../font/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../font/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Medium.woff2') format('woff2'),
+        url('../font/Gilroy-Medium.woff') format('woff'),
+        url('../font/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../font/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('../font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gilroy-Bold.woff2') format('woff2'),
+        url('../font/Gilroy-Bold.woff') format('woff'),
+        url('../font/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.Gilroy-Medium {
+	font-family: 'Gilroy-Medium';
+    font-size: 18px;
+	text-align: center;
+	color: black;
+}
+
+.Gilroy-Bold {
+	font-family: 'Gilroy-Bold';
+    font-size: 34px;
+	text-align: center;
+	color: black;
+}
+
+.Gilroy-Bold-menu {
+	font-family: 'Gilroy-Bold';
+    font-size: 18px;
+	font-weight: bold;
+	color: #828282;
+	text-decoration: none;
+}
+
+.Gilroy-Bold-DN {
+	font-family: 'Gilroy-Bold';
+    font-size: 48px;
+	font-weight: bold;
+	color: black;
+}
+
+.skills {
+	width: 100%;
+	height: auto;	
+	background-color: aquamarine;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-items: center;
+}
+
+.g2 {
+	width: 100%;	
+	min-width: 250px;
+	height: auto;
+	background-color: yellowgreen;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.r5 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+	justify-content: center;		
+}
+
+@media (min-width: 501px) {
+	.g2 {
+	  flex-direction: row;		    
+	  flex-wrap: wrap;		  
+	}
+  }
+  
+  @media (max-width: 500px) {
+	.g2 {
+      flex-wrap: nowrap;	
+	  flex-direction: column;
+	  width: 250px;
+	}
+  }
+
+.r11{
+    width: 89.07px;
+    height: 88.41px;
+    background-image: url(../img/Ps.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+	background-color: aquamarine;
+	background-position: center center;
+}
+
+.r21{
+    width: 89.07px;
+    height: 88.41px;
+    background-image: url(../img/Ai.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+	background-color: aquamarine;
+	background-position: center center;
+}
+
+.r31{
+    width: 89.07px;
+    height: 88.41px;
+    background-image: url(../img/Ae.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+	background-color: aquamarine;
+	background-position: center center;
+}
+
+.r41{
+    width: 89.07px;
+    height: 88.41px;
+    background-image: url(../img/figma.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+	background-color: aquamarine;
+	background-position: center center;
+}
+
+.r {
+	width: 250px;
+	height: 250px;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-items: center;
+	justify-content: center;
+	background-color: chartreuse;
+}
+
+
+.contacts {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align:center;
+	background-color: coral;
+}
+
+input[name="run_script"] { 
+    border: none;
+    border-radius: 7px;
+    padding: 10px 25px;
+    background: black;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+	font-family: 'Gilroy-Medium';
+    font-size: 18px;
+  }
+
+  input[name="run_script"]:hover {
+    background: rgb(124, 121, 121);
+    color:black;
+  } 
+
+.g3 {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cc {
+    width: 30px;
+    height: 30px;
+	text-decoration: none;
+}
+
+.im {
+    width: 30px;
+    height: 30px; 
+    object-fit: contain;  
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+ 
+.im:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.about {
+    width: 100%;
+    height: auto;
+	text-align: center;
+    background-color: crimson;
+}
+
+.portfolio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.p-ph {
+    width: 80%; 
+    height: auto;
+    object-fit: cover; 
+    object-position: bottom; 
+}
+
+.menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;   
+    color: black;
+	background-color: fuchsia;
+}
+
+.Gilroy-Bold-menu:hover {
+    color: black;
+}
+
+.home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.g1 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	background-color: darkolivegreen;
+}
+
+.h1 {
+    width: 100px;
+    height: 100px; 
+    font-size: 30px;
+    font-weight: bold;
+	background-color: yellow;
+	display: grid;
+    align-items: end;
+}  
+
+.h2 {
+    width: 200px;
+    height: 100px; 
+	background-color: aqua;
+	display: grid;
+    align-items: end;
+}  
+
+.h3 {
+    width: 35px;
+    height: 100px; 
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+	background-color: goldenrod;
+}
+
+.vl1 {width: 40px; height: 40px; transform: rotate(-90deg);}
+.sep {width: 30px; height: 30px; transform: rotate(-90deg); text-align:center;}
+.vl2 {width: 30px; height: 30px; transform: rotate(-90deg); color: #828282;}
+
+.photo2 {
+	width: 100%; 
+	height: auto;
+	object-fit: cover; 
+}
+
+.slider2 {
+    width: 80%; 
+    height: auto;
+    background-color: red;
+}
+
+.outdiv__slider2 {
+	width: 100%;
+	height: auto;
+	background-color: violet;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: center;
+}
+
+.outdiv21 {
+    width: 10%;
+    height: auto;
+    background-color: blue;
+}
+

@@ -1,0 +1,419 @@
+body {
+  overflow: visible;
+  grid-auto-flow: dense;
+  object-fit: cover;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  display: grid;  
+  gap: 0;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: "A"
+                       "B"
+                       "B"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "C"
+                       "D";
+  background-image: url(../img/fon.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;  
+  font-family: 'Unbounded', cursive;
+  font-size: 16px;
+}
+
+.body-Antosha {
+    background-image: url(../img/fon1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Balu {
+    background-image: url(../img/fon2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Bax {
+    background-image: url(../img/fon3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Klyaksa {
+    background-image: url(../img/fon4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Malyshka {
+    background-image: url(../img/fon5.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Max {
+    background-image: url(../img/fon6.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Olly {
+    background-image: url(../img/fon7.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Rem {
+    background-image: url(../img/fon8.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Styopa {
+    background-image: url(../img/fon9.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Tyoma {
+    background-image: url(../img/fon10.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.body-Veya {
+    background-image: url(../img/fon11.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 200;
+}
+
+.div-doma-1 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 50px; 
+    left: 125px;
+    background-image: url(../img/1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-doma-1:hover {
+    z-index: 1000;
+    transform: scale(1.3);
+}
+
+.div-doma-2 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 50px; 
+    left: 475px;
+    background-image: url(../img/2.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.div-doma-2:hover {
+    z-index: 1000;
+    transform: scale(1.3);
+}
+
+.div-doma-3 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 50px; 
+    left: 825px;
+    background-image: url(../img/3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-doma-3:hover {
+    z-index: 1000;
+    transform: scale(1.3);
+}
+
+.foto {
+    float: right;
+    width: 400px;
+    margin-left: 10px;
+}
+
+.back {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.div-header {
+    grid-area: A; 
+    width: 100%;
+    min-height: auto;
+}
+
+.div-info-section {
+    grid-area: B; 
+    width: 100%;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: auto;
+}
+
+.info {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 16px; 
+}
+
+.div-info-nav {
+    position: relative;
+    grid-area: C; 
+    width: 100%;
+    top: 0;
+}
+
+.div-footer {
+    grid-area: D; 
+    width: 100%;
+    color: rgb(255, 0, 157);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hl {
+   color: rgb(255, 0, 157);
+}
+
+.zag {
+    text-align: center; 
+    letter-spacing: 4px;
+    color: rgb(255, 0, 157);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dog {
+    color:rgb(212, 23, 23);
+    font-weight: bold;
+}
+
+.div-info-Antosha {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0; 
+    left: 25px;
+    background-image: url(../img/Antosha.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Antosha:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Balu {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 30px; 
+    left: 125px;
+    background-image: url(../img/Balu.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Balu:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Bax {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50px; 
+    left: 225px;
+    background-image: url(../img/Bax.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Bax:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Klyaksa {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 80px; 
+    left: 325px;
+    background-image: url(../img/Klyaksa.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Klyaksa:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Malyshka {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0; 
+    left: 425px;
+    background-image: url(../img/Malyshka.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Malyshka:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Max {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 80px; 
+    left: 525px;
+    background-image: url(../img/Max.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Max:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Olly {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0; 
+    left: 625px;
+    background-image: url(../img/Olly.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Olly:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Rem {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 30px; 
+    left: 725px;
+    background-image: url(../img/Rem.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Rem:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Styopa {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 10px; 
+    left: 850px;
+    background-image: url(../img/Styopa.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Styopa:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Tyoma {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 130px; 
+    left: 925px;
+    background-image: url(../img/Tyoma.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Tyoma:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.div-info-Veya {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0; 
+    left: 1025px;
+    background-image: url(../img/Veya.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div-info-Veya:hover {
+    z-index: 1000;
+    transform: scale(1.2);
+}
+

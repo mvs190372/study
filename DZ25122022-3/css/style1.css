@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.block1 {
+    width: 200px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.block2 {
+    width: 400px;
+    height: 300px;
+    background-color: yellowgreen;
+}
+
+.block3 {
+    width: 600px;
+    height: 200px;
+    background-color: pink;
+}
+
+@media (max-width: 767px) {
+    .b {background-color: black;}
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .b {background-color: red;}
+}

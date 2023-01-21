@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+@keyframes infoAnimation {
+    0% {
+      border-style: dotted; 
+    }
+    100% {
+      border-style: dashed;         
+    }
+}
+
+@keyframes buttonAnimation {
+    0% {
+      background-color: rgb(255, 0, 0); 
+    }
+    5% {
+      background-color: rgb(255, 60, 0);         
+    }
+    10% {
+        background-color: rgb(255, 123, 0);         
+      }
+    15% {
+      background-color: rgb(255, 145, 0);         
+    }
+    20% {
+      background-color: rgb(255, 196, 0);         
+    }
+    25% {
+      background-color: rgb(255, 217, 0);         
+    }
+    30% {
+      background-color: rgb(255, 238, 0);         
+    }
+    35% {
+      background-color: rgb(187, 255, 0);         
+    }
+    40% {
+      background-color: rgb(43, 255, 0);         
+    }
+    45% {
+      background-color: rgb(9, 255, 0);         
+    }
+    50% {
+      background-color: rgb(0, 255, 76);         
+    }
+    55% {
+      background-color: rgb(0, 255, 128);         
+    }
+    60% {
+      background-color: rgb(0, 247, 255);         
+    }
+    65% {
+      background-color: rgb(0, 132, 255);         
+    }
+    70% {
+        background-color: rgb(75, 0, 255);  
+    }
+    75% {
+        background-color: rgb(100, 0, 255);  
+    }
+    80% {
+        background-color: rgb(111, 0, 255);         
+    }
+    85% {
+        background-color: rgb(183, 0, 255);  
+    }
+    90% {
+        background-color: rgb(255, 0, 200);  
+    }
+    95% {
+        background-color: rgb(255, 0, 128);  
+    }
+    100% {
+        background-color: rgb(255, 0, 43);  
+    }
+}
+
+.com {
+   width: 150px;
+   height: 30px;
+   position: absolute;
+   border-radius: 7px;
+   cursor: pointer;
+   font-weight: bold;
+   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.9);
+}
+
+.b {
+   top: calc(50% - 15px);
+   left: calc(50% - 75px);
+}
+
+.reset {
+   top: calc(50% + 45px);
+   left: calc(50% - 75px);
+}
+
+.button1 {
+   background-color: black;
+   color: white;
+   border: none;
+   z-index: 1;
+}
+
+.button1d {
+  border: 0.1px solid #636262;
+  background-color: #bbbaba;
+  color: #636262;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.9);
+  z-index: 0;
+}
+
+.button1:hover {
+    animation: buttonAnimation infinite 15s;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.9);        
+}
+
+.info {
+    width: 500px;
+    height: auto;
+    min-height: 50px;
+    position: absolute;
+    top: calc(20% - 25px);
+    left: calc(50% - 250px);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: aquamarine;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.9);
+    animation: infoAnimation infinite 1s;
+}
+
+
+

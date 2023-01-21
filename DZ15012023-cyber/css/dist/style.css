@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+@font-face {
+  font-family: "Gilroy Semibold";
+  src: url("../../font/Gilroy-SemiBold.eot");
+  src: url("../../font/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../font/Gilroy-SemiBold.woff") format("woff"), url("../../font/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.rectangle1 {
+  position: absolute;
+  width: 1440px;
+  height: 1509px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+  border-style: solid;
+}
+.rectangle1__work1 {
+  position: absolute;
+  left: 330px;
+  top: 613px;
+  width: 380px;
+  height: 44px;
+}
+.rectangle1__work1 p {
+  font-family: "Rubik";
+  font-size: 16px;
+  line-height: 22px;
+  color: #6D6D78;
+}
+.rectangle1__watch {
+  position: absolute;
+  left: 330px;
+  top: 663px;
+  width: 100px;
+  height: 22px;
+}
+.rectangle1__watch p {
+  font-family: "Rubik";
+  font-size: 14px;
+  line-height: 22px;
+  color: #6D6D78;
+}
+.rectangle1__video {
+  position: absolute;
+  width: 140px;
+  height: 80px;
+  left: 170px;
+  top: 609px;
+  background-color: #361C5D;
+}
+.rectangle1__video img {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+.rectangle1__video:hover {
+  cursor: pointer;
+}
+.rectangle1__learn {
+  position: absolute;
+  left: 170px;
+  top: 503px;
+  width: 157px;
+  height: 46px;
+  background: #F2994A;
+  box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+  border-radius: 3px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.rectangle1__learn:hover {
+  cursor: pointer;
+}
+.rectangle1__demo {
+  position: absolute;
+  width: 157px;
+  height: 46px;
+  left: 347px;
+  top: 503px;
+  border: 1px solid #F2994A;
+  border-radius: 4px;
+  background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+  color: #F2994A;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.rectangle1__demo:hover {
+  cursor: pointer;
+}
+.rectangle1__reasons {
+  position: absolute;
+  width: 531px;
+  height: 150px;
+  left: 170px;
+  top: 250px;
+}
+.rectangle1__reasons p {
+  font-family: "Inter", sans-serif;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+  color: #99EFD0;
+}
+.rectangle1__work {
+  position: absolute;
+  left: 170px;
+  top: 419px;
+  width: 468px;
+  height: 44px;
+}
+.rectangle1__work p {
+  font-family: "Gilroy Semibold";
+  font-size: 18px;
+  line-height: 22px;
+  color: #8476AA;
+}
+.rectangle1__kiborg {
+  position: absolute;
+  width: 1440px;
+  height: 1509px;
+  left: 709.98px;
+  top: 219.15px;
+}
+.rectangle1__header {
+  position: absolute;
+  width: 1100px;
+  height: 36px;
+  left: 170px;
+  top: 79px;
+}
+.rectangle1__header__signin {
+  position: absolute;
+  width: 112px;
+  height: 36px;
+  left: 860px;
+  top: 0;
+  border: 1px solid #F2994A;
+  border-radius: 4px;
+  background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+  color: #F2994A;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.rectangle1__header__signin:hover {
+  cursor: pointer;
+}
+.rectangle1__header__signup {
+  position: absolute;
+  width: 112px;
+  height: 36px;
+  left: 988px;
+  top: 0;
+  background: #F2994A;
+  box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+  border-radius: 3px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.rectangle1__header__signup:hover {
+  cursor: pointer;
+}
+.rectangle1__header__group8 {
+  position: absolute;
+  width: 427px;
+  height: 36px;
+  left: 0;
+  top: 0;
+}
+.rectangle1__header__group8 img {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #F2994A;
+}
+.rectangle1__header__group8__menu {
+  position: absolute;
+  width: 347px;
+  height: 20px;
+  right: 0px;
+  top: 8px;
+  font-family: "Gilroy Semibold";
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #B5B5B5;
+}
+.rectangle1__header__group8__menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+.rectangle1__header__group8__menu ul li a {
+  color: #B5B5B5;
+  text-decoration: none;
+}

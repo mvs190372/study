@@ -1,0 +1,102 @@
+
+* {
+    font-family: 'Neucha', cursive;
+}
+
+body {
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: aquamarine;    
+}
+h1 {
+    color:#070985;
+    font-family: 'Pattaya', sans-serif;   
+    text-align: left; 
+}
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 350px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: rgb(99, 8, 54); /* Синий цвет фона */
+    color:  rgb(238, 241, 24); /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+} 
+
+[data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+}
+
+ul {
+  list-style-type: square;
+  color:rgb(47, 17, 75);
+}
+
+ol {
+ font-weight: bold;
+}
+
+.inner:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    color: rgb(99, 8, 54);
+    text-shadow:2px -2px 5px rgb(238, 241, 24);
+    font-weight: bolder;
+}
+
+table tr td {
+    font-family: 'Rubik Mono One', sans-serif;   
+    border: 2px solid black;
+    text-align: center;   
+    color: rgb(99, 8, 54);
+}
+
+thead {    
+    background-color: rgb(238, 241, 24);
+}
+
+.ldiv {
+    width: max-content;
+    border-style: dotted; 
+    border-color: blueviolet;
+}
+
+.ldiv:hover {
+    box-shadow: -6px -6px 8px -4px rgba(255,0,0,0.75),
+                6px -6px 8px -4px rgba(0,255,0,0.75),
+                6px 6px 8px -4px rgba(255,255,0,0.75),
+                -6px 6px 8px -4px rgba(0,0,255,0.75);
+}
+
+.tdiv {
+    border-style:ridge;
+    border-color: #e2df2b;
+    margin-top: 50px;
+}
+
+.cell-1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(238, 241, 24);
+    font-size: x-large;
+}
+
+.cell-1:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+

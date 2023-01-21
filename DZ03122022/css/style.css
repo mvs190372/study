@@ -1,0 +1,19 @@
+.zag{
+ color:rgb(0, 43, 0); 
+ text-align: center;   
+}
+body{
+    background-color:rgb(251, 255, 41);
+}
+
+footer {
+font-size: large;
+font-weight: bold;
+}
+nav{
+    font-size: large;
+    font-weight: bold;
+}
+ul{
+    list-style-type: square;
+}

@@ -1,0 +1,72 @@
+*{
+    background: black;
+    color: white;    
+}
+
+h1 {
+color: rgb(225, 0, 255) !important;
+}
+
+h2 {
+    color: aqua !important;
+}
+
+.nav-news {
+    color: rgb(225, 0, 255);
+}
+
+.nav-products {
+    color: rgb(140, 0, 255);
+}
+
+.nav-price {
+    color: rgb(68, 0, 255);
+}
+
+.nav-updates {
+    color: rgb(0, 38, 255);
+}
+
+.nav-support {
+    color: rgb(0, 183, 255);
+}
+
+.nav-contacts {
+    color: rgb(0, 238, 255);
+}
+
+.nav-help {
+    color: aqua;
+}
+
+.zag{
+ text-align: center;   
+}
+
+footer {
+font-size: large;
+font-weight: bold;
+color: aqua !important;
+}
+
+nav{
+    font-size: large;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: square;
+}
+
+.site {
+    width: 100%;
+    min-height: 80vh;
+}
+
+.nazv {
+    color: rgb(225, 0, 255);
+}
+
+
+
+

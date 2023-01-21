@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <script type="text/javascript">
+    function buttonPressed() {  
+      document.getElementById("sm").hidden=true;
+    }
+    function buttonResetPressed() {
+      document.getElementById("sm").hidden=false;
+    }
+  </script>
+  <div class="info"><p><b>Уважаемый пользователь!<br>
+                       Наведите курсор на кнопку "Send Message" и подождите секунд 30.<br> 
+                       Затем нажмите на кнопку.<br>
+                       После отправки сообщения кнопка 
+                       "Send Message" станет неактивна. 
+                       Активировать её можно кнопкой "Reset".</b></p></div>
+  <button type="button" id="sm" class="button1 b com" onclick="buttonPressed();">Send Message</button>
+  <button type="button" id="smd" class="button1d b com">Message Sent</button>
+  <button type="button" id="res" class="reset button1 com" onclick="buttonResetPressed();">Reset</button>  
+</body>
+</html>
