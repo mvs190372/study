@@ -1,129 +1,11 @@
-/** {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}*/
-
-.container1 {
-    width: 100%;
-    height: 1509px;
-    display: grid;
-    grid-template-areas: 
-      "A B C C C D E F G H"
-      "A I I I I D J J J H"
-      "A K K K K D L L L H"
-      "A M M M M D L L L H"	
-	  "A N N O P D L L L H"
-	  "A Q Q R S D L L L H"
-	  "A T T T T D L L L H";
-    grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10px;
-    grid-template-rows: repeat(7, 1fr);
-	row-gap: 0;
-	column-gap: 0;
-
-    &__areaA {
-	    grid-area: A;
-	    background-color: yellow;
-    }
-
-	&__areaB {
-		grid-area: B;
-		background-color: red;
-	} 
-
-	&__areaC {
-		grid-area: C;
-		background-color: aqua;
-	}	
-
-	&__areaD {
-		grid-area: D;
-		background-color: green;
-	}
-
-	&__areaE {
-		grid-area: E;
-		background-color: yellowgreen;
-	}
-
-	&__areaF { 
-		grid-area: F;
-		background-color: lightcoral;
-	}
-
-	&__areaG {
-		grid-area: G;
-		background-color: hotpink;
-	}
-
-	&__areaH {
-		grid-area: H;
-		background-color: darkgrey;
-	}
-
-	&__areaI {
-		grid-area: I;
-		background-color: forestgreen;
-	}
-
-	&__areaJ {
-		grid-area: J;
-		background-color: khaki;
-	}
-
-	&__areaK {
-		grid-area: K;
-		background-color: salmon;
-	}
-
-	&__areaL {
-		grid-area: L;
-		background-color: brown;
-	}
-
-	&__areaM {
-		grid-area: M;
-		background-color: orange;
-	}
-
-	&__areaN {
-		grid-area: N;
-		background-color: pink;
-	}
-
-	&__areaO {
-		grid-area: O;
-		background-color: blue;
-	}
-
-	&__areaP {
-		grid-area: P;
-		background-color: black;
-	}
-
-	&__areaQ {
-		grid-area: Q;
-		background-color: white;
-	}
-
-	&__areaR {
-		grid-area: R;
-		background-color: fuchsia;
-	}
-
-	&__areaS {
-		grid-area: S;
-		background-color: olivedrab;
-	}
-
-	&__areaT {
-		grid-area: T;
-		background-color: darkslategrey;
-	}
 }
 
-/*body {
-	position: relative;
+body {
+	background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
 }
 
 @font-face {
@@ -134,7 +16,17 @@
     url('../../font/Gilroy-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    }
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('../../font/Gilroy-Bold.woff2') format('woff2'),
+        url('../../font/Gilroy-Bold.woff') format('woff'),
+        url('../../font/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  } 
 
 @mixin button1() {
 	background: #F2994A;
@@ -166,35 +58,202 @@
 	text-transform: uppercase;		
 }
 
-.rectangle1 {
-	position: absolute;
-    width: 1440px;
-    height: 1509px;
-    left: 0px;
-    top: 0px;
-	background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
-	border-style: solid;
+@mixin titleText() {
+	font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 22px;
+    color: #99EFD0;
+}
 
-	&__work1 {
-		position: absolute;
-		left: 330px;
-		top: 613px;
-		width: 380px;
-		height: 44px;
-		& p {
-			font-family: 'Rubik';
-			font-size: 16px;
-    		line-height: 22px;
-    		color: #6D6D78;
-		}	
+@mixin description() {
+	font-family: 'Gilroy SemiBold';
+    font-size: 14px;
+    line-height: 22px;
+    color: #8476AA;
+}
+
+@mixin titleTextInter() {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.33px;
+	color: #99EFD0;
+}
+
+@mixin titleTextInter1() {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 50px;
+text-align: center;
+color: #99EFD0;
+}
+
+.container1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+	  "E E E E E E E E E E"
+      "A B C C C C C F G H"
+	  "A S S S S S S S S H"
+      "A I I I I I L L L H"
+      "A K K K K D L L L H"
+      "A M M M M D L L L H"	
+	  "A N N O P D L L L H"
+	  "A J J J J D L L L H"	
+	  "A Q Q R R D L L L H"
+	  "A T T T T D L L L H";
+    grid-template-columns: 40px 36px 104px 1fr 1fr 1fr 1fr 1fr 1fr 40px;
+    grid-template-rows: 20px 36px 20px 80px 150px 50px 46px 20px 80px 80px; 
+	row-gap: 0;
+	column-gap: 0;
+
+    &__areaA {
+		width: 100%;
+		height: 100%;
+	    grid-area: A;
+    }
+
+	&__areaB {
+		width: 100%;
+		height: 100%;
+		min-width: 36px;
+		min-height: 36px;
+		grid-area: B;
+	} 
+
+	&__areaC {
+		width: 100%;
+		height: 100%;
+		min-width: 350px;
+		grid-area: C;
+		&__menu {
+			position: relative;
+			left: 10px;
+			top: 8px;
+			font-family: 'Gilroy Semibold';
+			font-size: 12px;
+			line-height: 20px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: #B5B5B5;
+			& ul {
+				display: flex;
+				flex-direction: row;
+				justify-items: flex-end;				
+				align-items: center;
+				list-style-type: none;
+				& li a {
+				  color: #B5B5B5;
+				  text-decoration: none;
+				}
+			} 
+		}
+	}	
+
+	&__areaD {
+		width: 100%;
+		height: 100%;
+		grid-area: D;
 	}
 
-	&__watch {
-		position: absolute;
-		left: 330px;
-		top: 663px;
-		width: 100px;
-		height: 22px;
+	&__areaE {
+		width: 100%;
+		height: 100%;
+		grid-area: E;
+	}
+
+	&__areaF { 
+		width: 100%;
+		height: 100%;
+		min-width: 112px;
+		min-height: 36px;
+		grid-area: F;
+		&__signin {			
+			position: relative;
+			width: 112px;
+			height: 36px;
+			left: 0;
+			top: 0;
+			@include button2();	                
+			&:hover {
+				cursor: pointer;				
+			}
+		}
+	}
+
+	&__areaG {
+		width: 100%;
+        height: 100%;
+		min-width: 112px;
+        min-height: 36px;
+		grid-area: G;
+		&__signup {
+			position: relative;
+			width: 112px;
+			height: 36px;
+			left: 0;
+			top: 0;
+			@include button1();
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__areaH {
+		width: 100%;
+		height: 100%;
+		grid-area: H;
+	}
+
+	&__areaI {
+		width: 100%;
+		height: 100%;
+		grid-area: I;
+	}
+
+	&__areaJ {
+		width: 100%;
+		height: 100%;
+		grid-area: J;
+	}
+
+	&__areaK {
+		width: 100%;
+		height: 100%;
+		min-width: 540px;
+		grid-area: K;
+		& p{
+		   font-family: 'Inter', sans-serif;		
+		   font-family: 'Inter';
+		   font-style: normal;
+		   font-weight: 700;
+		   font-size: 44px;
+		   line-height: 50px;			
+		   color: #99EFD0;
+	   }
+	}
+
+	&__areaL {
+		width: 100%;
+		height: 100%;
+		grid-area: L;
+		background-image: url(../../img/kiborg.png);
+		background-size: contain;
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+
+	&__areaM {
+		width: 100%;
+		height: 100%;
+		grid-area: M;
 		& p {
 			font-family: 'Rubik';
 			font-size: 14px;
@@ -203,155 +262,977 @@
 		}	
 	}
 
-	&__video {
-		position: absolute;
-		width: 140px;
-        height: 80px;
-		left: 170px;
-		top: 609px;
-		background-color: #361C5D;
-		& img {
-          position: absolute;
-		  left: 50px;
-          top: 20px;
-		}
-		&:hover {
-			cursor: pointer;
-		}
-	}
-
-	&__learn {
-		position: absolute;
-		left: 170px;
-		top: 503px;
-		width: 157px;
-		height: 46px;			
-		@include button1();
-		&:hover {
-			cursor: pointer;
-		}
-	}
-
-	&__demo {
-		position: absolute;
-		width: 157px;
-		height: 46px;
-		left: 347px;
-		top: 503px;				
-		@include button2();
-		&:hover {
-			cursor: pointer;			
-		}
-	}
-
-	&__reasons {
-		position: absolute;
-		width: 531px;
-		height: 150px;
-		left: 170px;
-		top: 250px;    
-        & p{
-	     	font-family: 'Inter', sans-serif;		
-		    font-family: 'Inter';
-		    font-style: normal;
-			font-weight: 700;
-			font-size: 44px;
-			line-height: 50px;			
-			color: #99EFD0;
-	    }
-	}
-
-	&__work {
-		position: absolute;
-		left: 170px;
-		top: 419px;
-        width: 468px;
-        height: 44px;
-		& p {
-			font-family: 'Gilroy Semibold';
- 			font-size: 18px;
-            line-height: 22px;
-            color: #8476AA;
-		}	
-	}
-
-	&__kiborg {
-		position: absolute;
-		width: 1440px;
-		height: 1509px;
-		left: 709.98px;
-		top: 219.15px;
-	}
-
-	&__header {
-		position: absolute;
-        width: 1100px;
-        height: 36px;
-        left: 170px;
-        top: 79px;
-		&__signin {			
-			position: absolute;
-			width: 112px;
-			height: 36px;
-			left: 860px;
+	&__areaN {
+		width: 100%;
+		height: 100%;
+		min-width: 157px;
+        min-height: 46px;
+		grid-area: N;
+		&__learn {
+			position: relative;
+			left: 0;
 			top: 0;
-			@include button2();	                 
-			&:hover {
-				cursor: pointer;				
-			}
-		}
-		&__signup {
-			position: absolute;
-			width: 112px;
-			height: 36px;
-			left: 988px;
-			top: 0;			
+			width: 157px;
+			height: 46px;			
 			@include button1();
 			&:hover {
 				cursor: pointer;
 			}
 		}
-		&__group8 {
-			position: absolute;
-            width: 427px;
-            height: 36px;
-            left: 0;
-            top: 0;
-			& img {
-				position: absolute;
-                left: 0%;
-				right: 0%;
-				top: 0%;
-				bottom: 0%;
-                background: #F2994A;
-			}
-			&__menu {
-				position: absolute;
-                width: 347px;
-                height: 20px;  
-                right: 0px;
-                top: 8px;
-				font-family: 'Gilroy Semibold';
-                font-size: 12px;
-                line-height: 20px;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                color: #B5B5B5;
-				& ul {
-					display: flex;
-					flex-direction: row;
-					justify-items:flex-end;
-					align-items: center;
-					list-style-type: none;
-					& li a {
-					  color: #B5B5B5;
-					  text-decoration: none;
-					}
-				} 
+	}
+
+	&__areaO {
+		width: 100%;
+		height: 100%;
+		min-width: 157px;
+        min-height: 46px;
+		grid-area: O;
+		&__demo {
+			position: relative;
+			width: 157px;
+			height: 46px;
+			left: 40px;
+			top: 0;				
+			@include button2();
+			&:hover {
+				cursor: pointer;	
 			}
 		}
 	}
-}*/
+
+	&__areaP {
+		width: 100%;
+		height: 100%;
+		grid-area: P;
+	}
+
+	&__areaQ {
+		width: 100%;
+		height: 100%;
+		grid-area: Q;
+        min-width: 140px;
+        min-height: 80px;
+        background-color: #361C5D;
+        & img {
+            position: relative;
+            left: 50px; 
+            top: 20px;
+        }
+        &:hover {
+	        cursor: pointer;
+        }
+	}
+
+	&__areaR {
+		width: 100%;
+		height: 100%;
+		grid-area: R;
+		& p:first-child {
+			padding-left: 20px;
+			font-family: 'Rubik';
+			font-size: 16px;
+			line-height: 22px;
+			color: #6D6D78;
+		}	
+		& p:last-child {
+			padding-left: 20px;
+			font-family: 'Rubik';
+			font-size: 14px;
+			line-height: 22px;
+			color: #6D6D78;
+		}	
+	}
+
+	&__areaS {
+		width: 100%;
+		height: 100%;
+		grid-area: S;
+	}
+
+	&__areaT {
+		width: 100%;
+		height: 100%;
+		grid-area: T;
+	}
+}
+
+.container2 {
+    width: 100%;
+    height: 100%;
+	& img {
+		width: 100%;
+        height: 100%;
+	}
+}
+
+.container3 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+	  "A1  A1  A1  A1  A1  A1  A1  A1  A1  A1 "
+      "A2  A3  A3  A3  A3  A3  A3  A3  A3  A32"
+	  "A2  A4  A4  A4  A4  A4  A4  A4  A4  A32"
+      "A2  A5  A6  A7  A8  A9  A10 A11 A13 A32"
+      "A2  A14 A15 A7  A16 A17 A10 A18 A19 A32"
+      "A2  A20 A21 A7  A22 A23 A10 A24 A25 A32"	
+	  "A2  A26 A27 A7  A28 A29 A10 A30 A31 A32"
+	  "A2  A12 A12 A12 A12 A12 A12 A12 A12 A32";
+    grid-template-columns: 40px 35px 250px 1fr 35px 250px 1fr 35px 250px 40px;
+    grid-template-rows: 20px 60px 30px 40px 90px 40px 90px 20px; 
+	row-gap: 0;
+	column-gap: 0;
+
+	&__areaA1 {
+		width: 100%;
+		height: 100%;
+		grid-area: A1;
+	}
+
+	&__areaA2 {
+		width: 100%;
+		height: 100%;
+		grid-area: A2;
+	}
+
+	&__areaA3 {
+		width: 100%;
+		height: 100%;
+		grid-area: A3;
+		& p {
+			@include titleTextInter1();
+		}
+	}
+
+	&__areaA4 {
+		width: 100%;
+		height: 100%;
+		grid-area: A4;
+		& p {
+			font-family: 'Gilroy Semibold';
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+			color: #8476AA;
+		}
+	}
+
+	&__areaA5 {
+		width: 100%;
+		height: 100%;
+		grid-area: A5;
+	}
+
+	&__areaA6 {
+		width: 100%;
+		height: 100%;
+		grid-area: A6;
+		& p {
+			@include titleText();
+		}
+	}
+
+	&__areaA7 {
+		width: 100%;
+		height: 100%;
+		grid-area: A7;
+	}
+
+	&__areaA8 {
+		width: 100%;
+		height: 100%;
+		grid-area: A8;
+	}
+
+	&__areaA9 {
+		width: 100%;
+		height: 100%;
+		grid-area: A9;
+		& p {
+			@include titleText();
+		}
+	}
+
+	&__areaA10 {
+		width: 100%;
+		height: 100%;
+		grid-area: A10;
+	}
+
+	&__areaA11{
+		width: 100%;
+		height: 100%;
+		grid-area: A11;
+	}
+
+	&__areaA12 {
+		width: 100%;
+		height: 100%;
+		grid-area: A12;
+	}
+
+	&__areaA13 {
+		width: 100%;
+		height: 100%;
+		grid-area: A13;
+		& p {
+			@include titleText();
+		}
+	}
+
+	&__areaA14 {
+		width: 100%;
+		height: 100%;
+		grid-area: A14;
+	}
+
+	&__areaA15 {
+		width: 100%;
+		height: 100%;
+		grid-area: A15;
+		& p {
+			@include description();
+		}
+	}
+
+	&__areaA16 {
+		width: 100%;
+		height: 100%;
+		grid-area: A16;
+	}
+
+	&__areaA17 {
+		width: 100%;
+		height: 100%;
+		grid-area: A17;
+		& p {
+			@include description();
+		}
+	}
+
+	&__areaA18 {
+		width: 100%;
+		height: 100%;
+		grid-area: A18;
+	}
+
+	&__areaA19 {
+		width: 100%;
+		height: 100%;
+		grid-area: A19;
+		& p {
+			@include description();
+		}
+	}
+
+	&__areaA20 {
+		width: 100%;
+		height: 100%;
+		grid-area: A20;
+	}
+
+	&__areaA21 {
+		width: 100%;
+		height: 100%;
+		grid-area: A21;
+		& p {
+			@include titleText();
+		}
+	}
+
+	&__areaA22 {
+		width: 100%;
+		height: 100%;
+		grid-area: A22;
+	}
+
+	&__areaA23 {
+		width: 100%;
+		height: 100%;
+		grid-area: A23;
+		& p {
+			@include titleText();
+		}
+	}
+
+	&__areaA24 {
+		width: 100%;
+		height: 100%;
+		grid-area: A24;
+	}
+
+	&__areaA25 {
+		width: 100%;
+		height: 100%;
+		grid-area: A25;
+		& p {
+			@include titleText();
+		}
+	}
+
+	&__areaA26 {
+		width: 100%;
+		height: 100%;
+		grid-area: A26;
+	}
+
+	&__areaA27 {
+		width: 100%;
+		height: 100%;
+		grid-area: A27;
+		& p {
+			@include description();
+		}
+	}
+
+	&__areaA28 {
+		width: 100%;
+		height: 100%;
+		grid-area: A28;
+	}
+
+	&__areaA29 {
+		width: 100%;
+		height: 100%;
+		grid-area: A29;
+		& p {
+			@include description();
+		}
+	}
+
+	&__areaA30 {
+		width: 100%;
+		height: 100%;
+		grid-area: A30;
+	}
+
+	&__areaA31 {
+		width: 100%;
+		height: 100%;
+		grid-area: A31;
+		& p {
+			@include description();
+		}
+	}
+
+	&__areaA32 {
+		width: 100%;
+		height: 100%;
+		grid-area: A32;
+	}
+}
+
+.container4 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+	  "B1 B4 B2 B5 B3"
+      "B1 B6 B2 B5 B3"
+	  "B1 B7 B2 B5 B3"
+      "B1 B8 B2 B5 B3"
+      "B9 B9 B9 B9 B9";
+    grid-template-columns: 140px 450px 1fr 500px 140px;
+    grid-template-rows: 200px 100px 46px 150px 50px; 
+	row-gap: 0;
+	column-gap: 0;
+
+	&__areaB1 {
+		width: 100%;
+		height: 100%;
+		grid-area: B1;
+	}
+
+	&__areaB2 {
+		width: 100%;
+		height: 100%;
+		grid-area: B2;
+	}
+
+	&__areaB3 {
+		width: 100%;
+		height: 100%;
+		grid-area: B3;
+	}
+
+	&__areaB4 {
+		width: 100%;
+		height: 100%;
+		grid-area: B4;
+		& p {
+			@include titleTextInter1();
+			text-align: left;
+			span {
+				color: #F2994A;
+			}
+		}		
+	}
+
+	&__areaB5 {
+		width: 100%;
+		height: 100%;
+		grid-area: B5;
+		position: relative;
+		& img {
+			position: absolute;
+		}
+
+		&__img1 {
+			left: 50px;
+			top: 20px;
+			width: 232.4px;
+			height: 225.25px;
+			z-index: 110;
+		}
+
+		&__img2 {
+			left: 164px;
+			top: 306px;
+			width: 150px;
+			height: 150px;
+			z-index: 120;
+		}
+
+		&__img3 {
+			left: 180px;
+			top: 0;
+			width: 286.04px;
+			height: 357.54px;
+			z-index: 100;
+		}
+
+		&__img4 {
+			left: 490px;
+			top: 270px;
+			width: 0.89px;
+			height: 152.85px;
+		}
+
+		&__img5 {
+			left: 470px;
+			top: 270px;
+			width: 0.89px;
+			height: 152.85px;
+		}
+		
+		&__img6 {
+			left: 450px;
+			top: 270px;
+			width: 0.89px;
+			height: 152.85px;
+		}
+		
+		&__img7 {
+			left: 430px;
+			top: 270px;
+			width: 0.89px;
+			height: 152.85px;
+		}
+		
+		&__img8 {
+			left: 410px;
+			top: 270px;
+			width: 0.89px;
+			height: 152.85px;
+		}
+				
+		&__img9 {
+			left: 390px;
+			top: 270px;
+			width: 0.89px;
+			height: 152.85px;
+		}
+	}
+
+	&__areaB6 {
+		width: 100%;
+		height: 100%;
+		grid-area: B6;
+		font-family: 'Gilroy SemiBold';
+        font-size: 15px;
+        line-height: 28px;
+		letter-spacing: 0.5px;
+		color: #8476AA;
+	}
+
+	&__areaB7 {
+		width: 100%;
+		height: 100%;
+		min-width: 157px;
+		min-height: 46px;
+		grid-area: B7;
+		&__learn {
+			position: relative;
+			left: 0;
+			top: 0;
+			width: 157px;
+			height: 46px;			
+			@include button1();
+			&:hover {
+				cursor: pointer;
+			}
+        }
+	}
+
+	&__areaB8 {
+		width: 100%;
+		height: 100%;
+		grid-area: B8;
+	}
+
+	&__areaB9 {
+		width: 100%;
+		height: 100%;
+		grid-area: B9;
+	}
+
+}
+
+.container5 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+	  "C1  C2  C2  C2  C2  C2  C3"
+      "C1  C4  C4  C4  C4  C4  C3"
+	  "C1  C5  C11 C7  C12 C9  C3"
+      "C1  C6  C11 C8  C12 C10 C3"
+      "C13 C13 C13 C13 C13 C13 C13";
+    grid-template-columns: 140px 300px 1fr 300px 1fr 300px 140px;
+    grid-template-rows: 100px 80px 46px 100px 50px; 
+	row-gap: 0;
+	column-gap: 0;
+
+	&__areaC1 {
+		width: 100%;
+		height: 100%;
+		grid-area: C1;
+	}
+
+	&__areaC2 {
+		width: 100%;
+		height: 100%;
+		grid-area: C2;
+		& p {				
+			@include titleTextInter();
+            span {
+                color: #F2994A;
+		    }
+		}
+	}
+
+	&__areaC3 {
+		width: 100%;
+		height: 100%;
+		grid-area: C3;
+	}
+
+	&__areaC4 {
+		width: 100%;
+		height: 100%;
+		grid-area: C4;
+		& p {
+			font-family: 'Gilroy SemiBold';
+			font-size: 15px;
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.2px;					
+			color: #8476AA;
+		}
+	}
+
+	&__areaC5 {
+		width: 100%;
+		height: 100%;
+		grid-area: C5;
+		& p {
+			@include titleTextInter();	
+		}
+	}
+
+	&__areaC6 {
+		width: 100%;
+		height: 100%;
+		grid-area: C6;
+		& p {
+			font-family: 'Gilroy SemiBold';
+			font-size: 15px;
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.2px;
+			color: #8476AA;
+		}
+	}
+
+	&__areaC7 {
+		width: 100%;
+		height: 100%;
+		grid-area: C7;
+		& p {
+			@include titleTextInter();
+		}
+	}
+
+	&__areaC8 {
+		width: 100%;
+		height: 100%;
+		grid-area: C8;
+		& p {
+			font-family: 'Gilroy SemiBold';
+			font-size: 15px;
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.2px;
+			color: #8476AA;
+		}
+	}
+
+	&__areaC9 {
+		width: 100%;
+		height: 100%;
+		grid-area: C9;
+		& p {
+			@include titleTextInter();
+		}
+	}
+
+	&__areaC10 {
+		width: 100%;
+		height: 100%;
+		grid-area: C10;
+		& p {
+			font-family: 'Gilroy SemiBold';
+			font-size: 15px;
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.2px;
+			color: #8476AA;
+		}
+	}
+
+	&__areaC11 {
+		width: 100%;
+		height: 100%;
+		grid-area: C11;
+	}
+
+	&__areaC12 {
+		width: 100%;
+		height: 100%;
+		grid-area: C12;
+	}
+
+	&__areaC13 {
+		width: 100%;
+		height: 100%;
+		grid-area: C13;
+	}
+}
+
+.container10 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+	  "H1  H3  H4  H4  H4  H4  H4  H18 H2"
+      "H1  H5  H5  H5  H5  H5  H5  H5  H2"
+	  "H1  H6  H7  H8  H9  H10 H11 H12 H2"
+      "H1  H13 H7  H14 H9  H15 H11  H16 H2"
+      "H17 H17 H17 H17 H17 H17 H17 H17 H17";
+    grid-template-columns: 140px 200px 1fr 200px 1fr 200px 1fr 200px 140px;
+    grid-template-rows: 50px 50px 50px 200px 50px;
+	row-gap: 0;
+	column-gap: 0;
+
+	&__areaH1 {
+		width: 100%;
+		height: 100%;
+		grid-area: H1;
+		background-color: blue;
+	}
+
+	&__areaH2 {
+		width: 100%;
+		height: 100%;
+		grid-area: H2;
+		background-color: green;
+	}
+
+	&__areaH3 {
+		width: 100%;
+		height: 100%;
+		grid-area: H3;
+		background-color: blueviolet;
+	}
+
+	&__areaH4 {
+		width: 100%;
+		height: 100%;
+		grid-area: H4;
+		background-color: red;
+	}
+
+	&__areaH5 {
+		width: 100%;
+		height: 100%;
+		grid-area: H5;
+		background-color: darkred;
+	}
+
+	&__areaH6 {
+		width: 100%;
+		height: 100%;
+		grid-area: H6;
+		background-color: darkgreen;
+	}
+
+	&__areaH7 {
+		width: 100%;
+		height: 100%;
+		grid-area: H7;
+		background-color: olive;
+	}
+
+	&__areaH8 {
+		width: 100%;
+		height: 100%;
+		grid-area: H8;
+		background-color: orangered;
+	}
+
+	&__areaH9 {
+		width: 100%;
+		height: 100%;
+		grid-area: H9;
+		background-color: saddlebrown;
+	}
+
+	&__areaH10 {
+		width: 100%;
+		height: 100%;
+		grid-area: H10;
+		background-color: yellowgreen;
+	}
+
+	&__areaH11 {
+		width: 100%;
+		height: 100%;
+		grid-area: H11;
+		background-color: firebrick;
+	}
+
+	&__areaH12 {
+		width: 100%;
+		height: 100%;
+		grid-area: H12;
+		background-color: fuchsia;
+	}
+
+	&__areaH13 {
+		width: 100%;
+		height: 100%;
+		grid-area: H13;
+		background-color: yellow;
+	}
+
+	&__areaH14 {
+		width: 100%;
+		height: 100%;
+		grid-area: H14;
+		background-color: darkmagenta;
+	}
+
+	&__areaH15 {
+		width: 100%;
+		height: 100%;
+		grid-area: H15;
+		background-color: aqua;
+	}
+
+	&__areaH16 {
+		width: 100%;
+		height: 100%;
+		grid-area: H16;
+		background-color: dimgray;
+	}
+
+	&__areaH17 {
+		width: 100%;
+		height: 100%;
+		grid-area: H17;
+		background-color: burlywood;
+	}
+
+	&__areaH18 {
+		width: 100%;
+		height: 100%;
+		grid-area: H18;
+		background-color: darkblue;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
